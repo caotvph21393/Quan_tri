@@ -1,0 +1,26 @@
+<%- include('../inc/top')%>
+      
+      <main class="">
+        
+        <div class="container-fluid justify-content-center mt-1">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                  <h3> <%= msg  %></h3>
+                 
+      <form method="post">
+        <h3 class="pt-3">Sửa người dùng</h3 class="pt-3">
+        <div class="mb-3">
+          <label for="" class="form-label">Tên đăng nhập</label>
+          <input type="text" class="form-control" id="" name="user_name" value="<%= objU.user_name %>" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" value="<%=objU.email  %>" placeholder="">
+          </div>
+        <button type="submit" class="btn btn-primary">Sửa</button>
+      </form>
+    </div>
+  </div>
+</div>
+</main>
+<%- include('../inc/bottom')%>
